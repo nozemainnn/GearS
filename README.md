@@ -1,0 +1,2 @@
+# GearS
+ICT-B-12 PROJECT. SEP,16,2025
