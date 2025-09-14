@@ -253,16 +253,6 @@ section{
     
 }
 
-.robot-3d {
-  width: 100%;
-  font-size: 100%;
-  position: fixed;     
-  top: -255px;
-  right: -47%;
-  transform: scale(0.2);         
-  pointer-events: none; 
-}
-
 :root{ 
   --header-h:72px;
 }
@@ -710,5 +700,6 @@ clip-path: circle(50% at 50% 50%);
   header .navbar.collapsed{ left:-120%; opacity:0; pointer-events:none; }
   header .navbar.active{ left:50%; opacity:1; pointer-events:auto; transform: translateX(-50%); }
 }
+
 
 
