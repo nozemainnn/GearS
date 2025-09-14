@@ -190,15 +190,6 @@ body{
     line-height: 1.1;
 }
 
-.robot-3d {
-  width: 100%;
-  font-size: 100%;
-  position: fixed;     
-  top: -255px;
-  right: -47%;
-  transform: scale(0.2);         
-  pointer-events: none; 
-}
 
 .products{
   padding: 3rem 6%; 
@@ -687,5 +678,6 @@ body{
     transform: translateX(-50%); 
   }
 }
+
 
 
