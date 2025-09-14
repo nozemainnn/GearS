@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEARSNEAK REVIEW</title>
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+ </head>
+ 
+ 
+ <body>
+    <header>
+        <a class="sneaker" data-aos="zoom-in-down" data-aos-duration="1500">
+        <img src="run.png" alt="GEARSNEAK logo" class="sneaker-logo">
+        <span class="sneaker-text">GEARSNEAK</span>
+        </a>
+        
+        <nav class="navbar"> 
+            <a href="index.html" data-aos="zoom-out-down" data-aos-duration="2200">Home</a>     
+            <a href="product.html" data-aos="zoom-out-down" data-aos-duration="2200">Product</a>
+            <a href="review.html" data-aos="zoom-out-down" data-aos-duration="2200">Review</a>
+        </nav>
+        
+       <div class="icons">
+        <a href="#" id="truck-btn" aria-label="Orders / Truck">
+          <i class="fa-solid fa-truck-fast"></i>
+          <span class="truck-badge"></span>
+        </a>
+        <a href="#" id="cart-btn" aria-label="Cart">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </a>
+        <a href="#" onclick="logout()"><i class="fa-solid fa-right-from-bracket"></i></a>
+      </div>
+    </header>
+
+    <section id="reviews" data-aos="fade-up" data-aos-duration="900">
+      <div class="reviews-wrap">
+        <div class="reviews-header">
+          <h2>Customer Reviews</h2>
+        </div>
+        <p class="ratings-note">Thank you for your feedback — your star ratings and comments help us improve our products and service. Click the stars to rate; if you'd like to replace a reviewer's image just let us know and we'll update it.</p>
+        <p style="color:#a3a875;font-size:0.9rem;margin-top:0.5rem"><em>— GearSneak Team</em></p>
+
+        <div class="reviews-grid">
+          <div class="review-card" data-id="r1" data-rating="0">
+            <div class="avatar"><img src="s60.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Anna</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1" title="1 star"></i>
+                <i class="fa fa-star" data-value="2" title="2 stars"></i>
+                <i class="fa fa-star" data-value="3" title="3 stars"></i>
+                <i class="fa fa-star" data-value="4" title="4 stars"></i>
+            
+              </div>
+              <p class="review-text">Napakabilis ng delivery at ang sapatos ay komportable. Recommended!</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r2" data-rating="0">
+            <div class="avatar"><img src="s31.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Mark</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa-solid fa-star-half" data-value="5"></i>
+              </div>
+              <p class="review-text">Mahusay ang quality para sa price.</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r3" data-rating="0">
+            <div class="avatar"><img src="s21.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Jasmine</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa fa-star" data-value="5"></i>
+              </div>
+              <p class="review-text">Ganda ng design pero medyo maliit ang size.</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r4" data-rating="0">
+            <div class="avatar"><img src="s11.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Luis</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa-solid fa-star-half" data-value="5"></i>
+                 
+              </div>
+              <p class="review-text">Okay ang transaction, maganda packaging.</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r5" data-rating="0">
+            <div class="avatar"><img src="s25.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Maya</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa fa-star" data-value="5"></i>
+              </div>
+              <p class="review-text">Maganda ang kulay at fit </p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r6" data-rating="0">
+            <div class="avatar"><img src="s33.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Carlos</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa-solid fa-star-half" data-value="5"></i>
+              </div>
+              <p class="review-text">Matibay at sulit ang presyo.</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r7" data-rating="0">
+            <div class="avatar"><img src="s37.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Rico</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa fa-star" data-value="5"></i>
+              </div>
+              <p class="review-text">Comfortable sa long walks. Recommend.</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r8" data-rating="0">
+            <div class="avatar"><img src="s41.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Ella</div>
+              <div class="stars" aria-label="Rating">
+                 <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa-solid fa-star-half" data-value="5"></i>
+              </div>
+              <p class="review-text">Mabilis ang delivery at maayos ang packaging.</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r9" data-rating="0">
+            <div class="avatar"><img src="s45.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Ben</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa fa-star" data-value="5"></i>
+              </div>
+              <p class="review-text">Medyo break-in pero okay na ngayon.</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r10" data-rating="0">
+            <div class="avatar"><img src="s49.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Sophie</div>
+              <div class="stars" aria-label="Rating">
+                    <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa-solid fa-star-half" data-value="5"></i>
+              </div>
+              <p class="review-text">Perfect sa cancha — mahusay ang traction.</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r11" data-rating="0">
+            <div class="avatar"><img src="s53.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Alex</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa fa-star" data-value="5"></i>
+              </div>
+              <p class="review-text">Tamang-tama ang size, walang issue.</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r12" data-rating="0">
+            <div class="avatar"><img src="s57.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Nico</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa fa-star" data-value="5"></i>
+              </div>
+              <p class="review-text">Stylish at comfy — maraming nagtatanong tungkol dito.</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r13" data-rating="0">
+            <div class="avatar"><img src="ss1.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Tina</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa fa-star" data-value="5"></i>
+              </div>
+              <p class="review-text">Good service — mabilis ang reply sa inquiries.</p>
+            </div>
+          </div>
+
+          <div class="review-card" data-id="r14" data-rating="0">
+            <div class="avatar"><img src="ss2.png" alt="avatar"></div>
+            <div class="review-content">
+              <div class="review-name">Rob</div>
+              <div class="stars" aria-label="Rating">
+                <i class="fa fa-star" data-value="1"></i>
+                <i class="fa fa-star" data-value="2"></i>
+                <i class="fa fa-star" data-value="3"></i>
+                <i class="fa fa-star" data-value="4"></i>
+                <i class="fa fa-star" data-value="5"></i>
+              </div>
+              <p class="review-text">Value for money — babalik ako uli para bumili.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  <div id="order-modal" class="order-modal" aria-hidden="true">
+    <div class="order-modal-content">
+      <button class="order-modal-close" aria-label="Close">✕</button>
+      <h3 style="margin-top:0;color:#fff">Your Orders</h3>
+      <div class="order-items"></div>
+      <div class="order-actions">
+        <button class="order-clear">Clear</button>
+        <button class="order-checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cart-modal" class="order-modal" aria-hidden="true">
+    <div class="order-modal-content">
+      <button class="order-modal-close cart-close" aria-label="Close">✕</button>
+      <h3 style="margin-top:0;color:#fff">Your Cart</h3>
+      <div class="cart-items"></div>
+      <div class="order-actions">
+        <button class="cart-clear">Clear Cart</button>
+        <button class="cart-checkout">Checkout Cart</button>
+      </div>
+    </div>
+  </div>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.48/build/spline-viewer.js"></script>
+<spline-viewer class="robot-3d" url="https://prod.spline.design/8v67e-NkISoKex52/scene.splinecode"></spline-viewer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+     </body>
+ </html>
+
+
+
+
+
+

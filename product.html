@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <title>GEARSNEAK STORE</title>
+  <link rel="stylesheet" href="product.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+
+
+<body>
+
+<header>
+    <a class="sneaker" data-aos="zoom-in-down" data-aos-duration="1500">
+      <img src="run.png" alt="GEARSNEAK logo" class="sneaker-logo">
+      <span class="sneaker-text">GEARSNEAK</span>
+    </a>
+
+    <nav class="navbar">
+      <a href="index.html" data-aos="zoom-out-down" data-aos-duration="2200">Home</a>     
+      <a href="product.html" data-aos="zoom-out-down" data-aos-duration="2200">Product</a>
+      <a href="review.html" data-aos="zoom-out-down"   data-aos-duration="2200">Review</a>
+    </nav>
+  
+  <div class="icons">
+    <a href="#" id="truck-btn" aria-label="Orders / Truck">
+      <i class="fa-solid fa-truck-fast"></i>
+      <span class="truck-badge"></span>
+    </a>
+    <a href="#" id="cart-btn" aria-label="Cart">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="cart-badge" id="cartCount">0</span>
+    </a>
+    <a href="#" onclick="logout()"><i class="fa-solid fa-right-from-bracket"></i></a>
+  </div>
+</header>
+
+<section class="products">
+  <div style="display: flex; justify-content: center; margin: 2rem 0;">
+    <input type="text" id="product-search" placeholder="Search products..." style="width: 300px; padding: 0.5rem 1rem; font-size: 0.9rem; border-radius: 2rem; border: 3px solid #000000; outline: none; text-align: center;">
+  </div>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="sss1.png" class="product-image" alt="Nike Vomero 5">
+      <div class="thumbs">
+        <img src="sss1.png" class="thumb selected" data-large="sss1.png" alt="thumb1">
+        <img src="sss2.png" class="thumb" data-large="sss2.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike Vomero 5</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+
+        <div class="price">
+          <div class="price-original">Php 14,999</div>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s13.png" class="product-image" alt="Nike Air Force 1 '07">
+      <div class="thumbs">
+        <img src="s13.png" class="thumb selected" data-large="s13.png" alt="thumb1">
+        <img src="s14.png" class="thumb" data-large="s14.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike Air Force 1 '07</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 7,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s21.png" class="product-image" alt="Nike Air Force 1 '07 LV8">
+      <div class="thumbs">
+        <img src="s21.png" class="thumb selected" data-large="s21.png" alt="thumb1">
+        <img src="s22.png" class="thumb" data-large="s22.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike Air Force 1 '07 LV8</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 10,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s25.png" class="product-image" alt="Nike Air Vapormax Plus">
+      <div class="thumbs">
+        <img src="s25.png" class="thumb selected" data-large="s25.png" alt="thumb1">
+        <img src="s26.png" class="thumb" data-large="s26.png" alt="thumb2">
+        <img src="s27.png" class="thumb" data-large="s27.png" alt="thumb3">
+        <img src="s28.png" class="thumb" data-large="s28.png" alt="thumb4">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike Air Vapormax Plus</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 7,999</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s29.png" class="product-image" alt="Nike Shox R4">
+      <div class="thumbs">
+        <img src="s29.png" class="thumb selected" data-large="s29.png" alt="thumb1">
+        <img src="s30.png" class="thumb" data-large="s30.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike Shox R4</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 11,000</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+     <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s33.png" class="product-image" alt="Nike C1TY">
+      <div class="thumbs">
+        <img src="s33.png" class="thumb selected" data-large="s33.png" alt="thumb1">
+        <img src="s34.png" class="thumb" data-large="s34.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike C1TY</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 13,999</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s37.png" class="product-image" alt="Nike Air Max DN8">
+      <div class="thumbs">
+        <img src="s37.png" class="thumb selected" data-large="s37.png" alt="thumb1">
+        <img src="s38.png" class="thumb" data-large="s38.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike Air Max DN8</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 13,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s41.png" class="product-image" alt="Nike Air Max 270">
+      <div class="thumbs">
+        <img src="s41.png" class="thumb selected" data-large="s41.png" alt="thumb1">
+        <img src="s42.png" class="thumb" data-large="s42.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike Air Max 270</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 15,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+      <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s45.png" class="product-image" alt="Nike Dunk Low Next Nature">
+      <div class="thumbs">
+        <img src="s45.png" class="thumb selected" data-large="s45.png" alt="thumb1">
+        <img src="s46.png" class="thumb" data-large="s46.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike Dunk Low Next Nature</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 14,999</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s49.png" class="product-image" alt="Nike P-6000">
+      <div class="thumbs">
+        <img src="s49.png" class="thumb selected" data-large="s49.png" alt="thumb1">
+        <img src="s50.png" class="thumb" data-large="s50.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike P-6000</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s53.png" class="product-image" alt="Nike Air Max Portal">
+      <div class="thumbs">
+        <img src="s53.png" class="thumb selected" data-large="s53.png" alt="thumb1">
+        <img src="s54.png" class="thumb" data-large="s54.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike Air Max Portal</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 16,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+        <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s57.png" class="product-image" alt="Nike Air Max Portal">
+      <div class="thumbs">
+        <img src="s57.png" class="thumb selected" data-large="s57.png" alt="thumb1">
+        <img src="s58.png" class="thumb" data-large="s58.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Nike Air Portal</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 15,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+     <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s9.png" class="product-image" alt="Jordan Flight Club '91">
+      <div class="thumbs">
+        <img src="s9.png" class="thumb selected" data-large="s9.png" alt="thumb1">
+        <img src="s10.png" class="thumb" data-large="s10.png" alt="thumb2">
+        <img src="s11.png" class="thumb" data-large="s11.png" alt="thumb3">
+        <img src="s12.png" class="thumb" data-large="s12.png" alt="thumb4">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan Flight Club '91</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 9,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s17.png" class="product-image" alt="Jordan Spizike Low">
+      <div class="thumbs">
+        <img src="s17.png" class="thumb selected" data-large="s17.png" alt="thumb1">
+        <img src="s18.png" class="thumb" data-large="s18.png" alt="thumb2">
+        <img src="s19.png" class="thumb" data-large="s19.png" alt="thumb3">
+        <img src="s20.png" class="thumb" data-large="s20.png" alt="thumb4">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan Spizike Low</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 9,999</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+      <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="ss1.png" class="product-image" alt="Jordan AJ 1 Mid">
+      <div class="thumbs">
+        <img src="ss1.png" class="thumb selected" data-large="ss1.png" alt="thumb1">
+        <img src="ss2.png" class="thumb" data-large="ss2.png" alt="thumb2">
+        <img src="ss3.png" class="thumb" data-large="ss3.png" alt="thumb3">
+        <img src="ss4.png" class="thumb" data-large="ss4.png" alt="thumb4">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan AJ 1 Mid</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 7,999</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    
+      <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s61.png" class="product-image" alt="Jordan AJ 2/3">
+      <div class="thumbs">
+        <img src="s61.png" class="thumb selected" data-large="s61.png" alt="thumb1">
+        <img src="s62.png" class="thumb" data-large="s62.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan AJ 2/3</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 7,999</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>  
+    
+      <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s65.png" class="product-image" alt="Jordan Flight Court">
+      <div class="thumbs">
+        <img src="s65.png" class="thumb selected" data-large="s65.png" alt="thumb1">
+        <img src="s66.png" class="thumb" data-large="s66.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan Flight Court</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 7,999</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s69.png" class="product-image" alt="Jordan Tatum 3">
+      <div class="thumbs">
+        <img src="s69.png" class="thumb selected" data-large="s69.png" alt="thumb1">
+        <img src="s70.png" class="thumb" data-large="s70.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan Tatum 3</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 7,999</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s73.png" class="product-image" alt="Jordan 6 Rings">
+      <div class="thumbs">
+        <img src="s73.png" class="thumb selected" data-large="s73.png" alt="thumb1">
+        <img src="s74.png" class="thumb" data-large="s74.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan 6 Rings</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 8,699</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s77.png" class="product-image" alt="Jordan AJ 4 RM">
+      <div class="thumbs">
+        <img src="s77.png" class="thumb selected" data-large="s77.png" alt="thumb1">
+        <img src="s78.png" class="thumb" data-large="s78.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan AJ 4 RM</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 9,979</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+    
+     <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s81.png" class="product-image" alt="Jordan Zion 4">
+      <div class="thumbs">
+        <img src="s81.png" class="thumb selected" data-large="s81.png" alt="thumb1">
+        <img src="s82.png" class="thumb" data-large="s82.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan Zion 4</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 8,399</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+      <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s84.png" class="product-image" alt="Jordan Heir">
+      <div class="thumbs">
+        <img src="s84.png" class="thumb selected" data-large="s84.png" alt="thumb1">
+        <img src="s85.png" class="thumb" data-large="s85.png" alt="thumb2">
+        <img src="s86.png" class="thumb" data-large="s86.png" alt="thumb3">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan Heir</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 11,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s87.png" class="product-image" alt="Jordan True Flight">
+      <div class="thumbs">
+        <img src="s87.png" class="thumb selected" data-large="s87.png" alt="thumb1">
+        <img src="s88.png" class="thumb" data-large="s88.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan True Flight</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+  <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s89.png" class="product-image" alt="Jordan D">
+      <div class="thumbs">
+        <img src="s89.png" class="thumb selected" data-large="s89.png" alt="thumb1">
+        <img src="s90.png" class="thumb" data-large="s90.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Jordan D</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s91.png" class="product-image" alt="PUMA SpeedCat OG">
+      <div class="thumbs">
+        <img src="s91.png" class="thumb selected" data-large="s91.png" alt="thumb1">
+        <img src="s92.png" class="thumb" data-large="s92.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">PUMA SpeedCat OG</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s93.png" class="product-image" alt="PUMA MB.04 Reflections">
+      <div class="thumbs">
+        <img src="s93.png" class="thumb selected" data-large="s93.png" alt="thumb1">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">PUMA MB.04 Reflections</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s94.png" class="product-image" alt="PUMA RS-X">
+      <div class="thumbs">
+        <img src="s94.png" class="thumb selected" data-large="s94.png" alt="thumb1">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">PUMA RS-X</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+    
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s95.png" class="product-image" alt="PUMA MB.04 Heem">
+      <div class="thumbs">
+        <img src="s95.png" class="thumb selected" data-large="s95.png" alt="thumb1">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">PUMA MB.04 Heem</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s96.png" class="product-image" alt="PUMA LaFrance Butterfly">
+      <div class="thumbs">
+        <img src="s96.png" class="thumb selected" data-large="s96.png" alt="thumb1">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">PUMA LaFrance Butterfly</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="s97.png" class="product-image" alt="PUMA miles Morales">
+      <div class="thumbs">
+        <img src="s97.png" class="thumb selected" data-large="s97.png" alt="thumb1">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">PUMA miles Morales</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="nb1.png" class="product-image" alt="New Balance 9060">
+      <div class="thumbs">
+        <img src="nb1.png" class="thumb selected" data-large="nb1.png" alt="thumb1">
+        <img src="nb2.png" class="thumb" data-large="nb2.png" alt="thumb2">
+        <img src="nb3.png" class="thumb" data-large="nb3.png" alt="thumb3">
+        <img src="nb4.png" class="thumb" data-large="nb4.png" alt="thumb4">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">New Balance 9060</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 7,999</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="nb5.png" class="product-image" alt="New Balance 2002R">
+      <div class="thumbs">
+        <img src="nb5.png" class="thumb selected" data-large="nb5.png" alt="thumb1">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">New Balance 2002R</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="nb6.png" class="product-image" alt="New Balance M1000">
+      <div class="thumbs">
+        <img src="nb6.png" class="thumb selected" data-large="nb6.png" alt="thumb1">
+        <img src="nb7.png" class="thumb selected" data-large="nb7.png" alt="thumb2">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">New Balance M1000</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div> 
+
+      <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="nb8.png" class="product-image" alt="New Balance 740">
+      <div class="thumbs">
+        <img src="nb8.png" class="thumb selected" data-large="nb8.png" alt="thumb1">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">New Balance 740</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="nb9.png" class="product-image" alt="New Balance 740">
+      <div class="thumbs">
+        <img src="nb9.png" class="thumb selected" data-large="nb9.png" alt="thumb1">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">New Balance 740</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="icon-overlay">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+        <img src="nb10.png" class="product-image" alt="New Balance Hesi Low V2">
+      <div class="thumbs">
+        <img src="nb10.png" class="thumb selected" data-large="nb10.png" alt="thumb1">
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">New Balance Hesi Low V2</h3>
+        <div class="rating">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+        <div class="product-meta">
+          <div class="meta-line">Men's/Women's</div>
+        </div>
+        <div class="price">
+          <span class="price-original">Php 12,499</span>
+        </div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>GEARSNEAK</h3>
+      <p>Dark-theme premium fashion</p>
+    </div>
+
+    <div class="footer-section footer-center">
+      <h3>COLLECTIONS</h3>
+      <ul class="footer-link">
+        <li>Men's</li>
+        <li>Women's</li>
+        <li>Accessories</li>
+      </ul>
+    </div>
+
+
+    <div class="footer-section footer-center">
+      <h3>OUR STORES</h3>
+      <ul class="footer-link">
+        <li><a href="#">Sri Lanka</a></li>
+        <li><a href="#">USA</a></li>
+        <li><a href="#">India</a></li>
+        <li><a href="#">Japan</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section footer-end">
+      <h3>SOCIAL MEDIA C.</h3>
+      <div class="social-icons">
+        <a href="https://x.com/roohyoon" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://web.facebook.com/Dinrmain" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/dinnnnmr/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i>
+
+
+        </a>
+        <a href="https://github.com/Dincodee/Dincodee" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.48/build/spline-viewer.js"></script>
+  <spline-viewer class="robot-3d" url="https://prod.spline.design/JqpMqW0lYnx92mUc/scene.splinecode"></spline-viewer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+  <div id="order-modal" class="order-modal" aria-hidden="true">
+    <div class="order-modal-content">
+      <button class="order-modal-close" aria-label="Close">✕</button>
+      <h3>Your Orders</h3>
+      <div class="order-items"></div>
+      <div class="order-actions">
+        <button class="order-clear">Clear Orders</button>
+        <button class="order-checkout">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="cart-modal" class="order-modal" aria-hidden="true">
+    <div class="order-modal-content">
+      <button class="order-modal-close cart-close" aria-label="Close">✕</button>
+      <h3>Your Cart</h3>
+      <div class="cart-items"></div>
+      <div class="order-actions">
+        <button class="cart-clear">Clear Cart</button>
+        <button class="cart-checkout">Checkout Cart</button>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  </html>

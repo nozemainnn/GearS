@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GearSneak Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+  
+</head>
+<body>
+  <div class="container" role="region" aria-labelledby="loginTitle">
+    <div class="header" aria-hidden="false">
+      <div class="logo" aria-hidden="true">GS</div>
+      <div>
+        <div class="title" id="loginTitle">GEARSNEAK</div>
+        <div class="subtitle">High-speed access. GS-secured.</div>
+      </div>
+    </div>
+
+    <form id="loginForm" novalidate>
+      <label class="sr-only" for="username">Username</label>
+      <div class="field">
+        <i class="fa-solid fa-user icon-left" aria-hidden="true"></i>
+        <input type="text" id="username" placeholder="Username or email" required autocomplete="username" />
+      </div>
+
+      <label class="sr-only" for="password">Password</label>
+      <div class="field">
+        <i class="fa-solid fa-lock icon-left" aria-hidden="true"></i>
+        <input type="password" id="password" placeholder="Password" required aria-describedby="pwHelp" aria-label="Password" autocomplete="current-password" />
+        <button type="button" class="toggle-password" id="togglePassword" aria-pressed="false" aria-label="Show password">
+          <i class="fa-solid fa-eye" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="pwHelp" class="pw-strength" aria-hidden="true"><i id="pwBar"></i></div>
+      <div class="pw-meta" aria-hidden="true">
+        <div style="opacity:.9">Password strength</div>
+        <div id="pwText" style="font-weight:700;color:var(--muted)">—</div>
+      </div>
+
+      <div class="meta-row">
+        <label class="remember"><input type="checkbox" id="remember"> Remember</label>
+        <a href="" style="color:#ff0000;text-decoration:none;font-size:.9rem">Forgot?</a>
+      </div>
+
+      <button type="submit" class="btn-primary"  id="signInBtn">Sign In</button>
+      <p id="errorMsg" aria-live="polite"></p>
+    </form>
+
+    <div class="social-row" aria-hidden="false">
+      <button class="social-btn" id="btn-google"><i class="fa-brands fa-google"></i> Google</button>
+      <button class="social-btn" id="btn-fb"><i class="fa-brands fa-facebook"></i> Facebook</button>
+    </div>
+
+    <a href="register.html" class="register-link">Create an account</a>
+  </div>
+
+  <div class="check" id="successCheck" role="status" aria-hidden="true">
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="32" cy="32" r="30" stroke="rgba(7,16,24,0.04)" stroke-width="0"></circle>
+      <path d="M18 34 L28.5 44 L46 22" stroke="#071018" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

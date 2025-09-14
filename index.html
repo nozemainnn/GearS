@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEARSNEAK HOME</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+</head>
+
+<body>
+  <header>
+    
+    <a class="sneaker" data-aos="zoom-in-down" data-aos-duration="1500">
+      <img src="run.png" alt="GEARSNEAK logo" class="sneaker-logo">
+      <span class="sneaker-text">GEARSNEAK</span>
+    </a>
+
+    <nav class="navbar">
+      <a href="index.html" data-aos="zoom-out-down" data-aos-duration="2200">Home</a>     
+      <a href="product.html" data-aos="zoom-out-down" data-aos-duration="2200">Product</a>
+      <a href="review.html" data-aos="zoom-out-down" data-aos-duration="2200">Review</a>
+    </nav>
+    
+   <div class="icons">
+    <a href="#" id="truck-btn" aria-label="Orders / Truck">
+      <i class="fa-solid fa-truck-fast"></i>
+      <span class="truck-badge"></span>
+    </a>
+    <a href="#" id="cart-btn" aria-label="Cart">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="cart-badge" id="cartCount">0</span>
+    </a>
+    <a href="#" onclick="logout()"><i class="fa-solid fa-right-from-bracket"></i></a>
+  </div>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-left" data-aos="fade-right" data-aos-duration="1200">
+          <h1>Sneaker Gear is your ultimate destination for premium sneakers, streetwear, and exclusive footwear accessories.</h1>
+          <p class="lead">You can’t physically verify your true shoe size
+          High Competition on brandings and trendings</p>
+          <a class="btn" href="product.html">Shop Now →</a>
+          <div class="dots" aria-hidden="true">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="hero-right" data-aos="fade-left" data-aos-duration="1200">
+          <div class="vignette"></div>
+          <div class="carousel">
+            <img src="3.png" class="slide active" alt="3">
+            <img src="1.png" class="slide" alt="1">
+            <img src="2.png" class="slide" alt="2">
+          </div>
+
+          <div class="controls">
+            <button id="prev" i class="fa-solid fa-arrow-left" aria-label="previous"></button>
+            <button id="play" aria-label="pause">❚❚</button>
+            <button id="next" i class="fa-solid fa-arrow-right" aria-label="next"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="spotlight" aria-label="product-spotlight">
+      <div class="left" data-aos="fade-right" data-aos-duration="900">
+        <img src="girl1.png" alt="lifestyle shot showing the product">
+      </div>
+      <div class="right" data-aos="fade-left" data-aos-duration="900">
+        <div class="product-media" aria-hidden="true">
+          <img src="girl2.png" alt="product image">
+        </div>
+        <div class="copy">
+          <h2>Future-Ready Kicks</h2>
+          <p>Iconic cushioning and bold silhouettes for comfort and statement style, every day.</p>
+          <a class="btn" href="product.html">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+  <section class="brands" aria-label="top-brands" data-aos="fade-up" data-aos-duration="2500">
+    <div class="brands-inner">
+      <h2>Shop Our Top Brands</h2>
+      <div class="brands-grid">
+        <a href="product.html" class="brand-tile" aria-label="Brand 1"><img src="nike.png"></a>
+        <a href="product.html" class="brand-tile" aria-label="Brand 2"><img src="puma.png"></a>
+        <a href="product.html" class="brand-tile" aria-label="Brand 3"><img src="jordan.png"></a>
+        <a href="product.html" class="brand-tile" aria-label="Brand 4"><img src="nb.png"></a>
+      </div>
+    </div>
+  </section>
+
+   <div id="order-modal" class="order-modal" aria-hidden="true">
+    <div class="order-modal-content">
+      <button class="order-modal-close" aria-label="Close">✕</button>
+      <h3 style="margin-top:0;color:#fff">Your Orders</h3>
+      <div class="order-items"></div>
+      <div class="order-actions">
+        <button class="order-clear">Clear</button>
+        <button class="order-checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cart-modal" class="order-modal" aria-hidden="true">
+    <div class="order-modal-content">
+      <button class="order-modal-close cart-close" aria-label="Close">✕</button>
+      <h3 style="margin-top:0;color:#fff">Your Cart</h3>
+      <div class="cart-items"></div>
+      <div class="order-actions">
+        <button class="cart-clear">Clear Cart</button>
+        <button class="cart-checkout">Checkout Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.45/build/spline-viewer.js"></script>
+  <spline-viewer 
+    class="robot-3d" 
+    url="https://prod.spline.design/7k0reIDL7f2bdc3d/scene.splinecode">
+  </spline-viewer> 
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
