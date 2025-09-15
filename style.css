@@ -253,6 +253,16 @@ section{
     
 }
 
+.robot-3d {
+  width: 100%;
+  font-size: 100%;
+  position: fixed;     
+  top: -255px;
+  right: -47%;
+  transform: scale(0.2);         
+  pointer-events: none; 
+}
+
 :root{ 
   --header-h:72px;
 }
@@ -655,34 +665,32 @@ clip-path: circle(50% at 50% 50%);
     display: block;
     z-index: 1102; 
   }
-
   
+  /* On small screens keep the navbar in normal flow and give more breathing room */
   header .navbar {
-    position: absolute;
-    top: calc(var(--header-h) + 8px);
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    margin-top: 8px;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 8px;
-    background: transparent; 
-    padding: 6px 10px;
-    border-radius: 8px;
-    width: auto;
-    z-index: 1100; 
-    opacity: 1;
-    transition: all .25s ease;
+    justify-content: center;
+    gap: 10px;
+    background: transparent;
+    padding: 8px 12px;
+    border-radius: 0;
     box-shadow: none;
-    pointer-events: auto; 
+    pointer-events: auto;
   }
 
   header .navbar a{
     font-size: 14px;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.6);
     border: .1rem solid rgba(255,255,255,0.06);
     color: #00f7ff;
-    padding: .45rem .9rem;
-    margin: 0 4px;
+    padding: .6rem .9rem; /* larger touch area */
+    margin: 0 6px;
     display:inline-flex;
     align-items:center;
     border-radius:6px;
@@ -692,14 +700,14 @@ clip-path: circle(50% at 50% 50%);
   }
 
   header .navbar a:hover{
-    background: rgb(0, 0, 0);
+    background: rgba(0,0,0,0.75);
     color: #00f7ff;
     transform: translateY(-2px);
   }
 
-  header .navbar.collapsed{ left:-120%; opacity:0; pointer-events:none; }
-  header .navbar.active{ left:50%; opacity:1; pointer-events:auto; transform: translateX(-50%); }
+  /* hide when collapsed (if script toggles this), otherwise show normally */
+  header .navbar.collapsed{ display:none; }
+  header .navbar.active{ display:flex; opacity:1; }
 }
-
 
 
